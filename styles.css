@@ -1,0 +1,217 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 300px;
+  margin: 10px;
+  gap: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: rgb(151, 146, 219);
+}
+
+/* navbar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: rgb(43, 101, 43);
+}
+
+.navbar ul {
+  list-style: none;
+  outline: none;
+  display: flex;
+}
+
+.navbar a {
+  text-decoration: none;
+  justify-content: space-between;
+  padding: 0 50px;
+  color: rgb(43, 101, 43);
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* showcase */
+
+.showcase h1 {
+  font-size: 35px;
+  color: rgb(43, 101, 43);
+}
+
+.showcase p {
+  font-weight: 100;
+  font-size: small;
+}
+
+.showcase button {
+  background-color: rgb(43, 101, 43);
+  color: #fff;
+  padding: 8px 23px;
+  border: solid;
+  margin-top: 15px;
+}
+
+/* popular courses */
+.popular {
+  padding: 132px;
+}
+.popular-header {
+  color: rgb(43, 101, 43);
+  font-size: 20px;
+  text-align: center;
+}
+
+.diff {
+  background-color: rgb(159, 238, 210);
+}
+
+.popular-card {
+  flex-wrap: nowrap;
+  padding-right: 30px;
+}
+
+.card-head {
+  justify-content: space-between;
+  font-size: small;
+  font-weight: 100;
+}
+
+.popular-card .card {
+  height: 150px;
+  width: 120px;
+  padding: 0 15px;
+}
+
+.card-foot {
+  margin-top: 40px;
+}
+
+/* about */
+.about img {
+  width: 500px;
+  height: 320px;
+}
+
+.about-card {
+  flex-direction: column;
+  column-gap: 10px;
+}
+
+/* subscribe */
+.subscribe {
+  margin: 50px 0 0 0;
+}
+
+.subscribe .card {
+  background-color: rgb(159, 238, 210);
+  height: 150px;
+  width: 500px;
+  padding: 10px;
+  border-radius: 2px;
+  text-align: center;
+}
+
+.subscribe input {
+  border: none;
+}
+
+.subscribe button {
+  background-color: rgb(159, 238, 210);
+  border: none;
+  padding: 7px;
+  border-radius: 2px;
+}
+.subscribe-input {
+  background-color: #fff;
+  padding: 7px;
+  justify-content: space-between;
+  border-radius: 2px;
+}
+
+/* footer */
+.footer {
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+  margin: 50px;
+}
+
+.footer h3,
+.about h2 {
+  font-size: medium;
+  font-weight: 600;
+}
+
+.footer p,
+.about p {
+  font-size: small;
+  font-weight: 100;
+}
+
+.footer .card {
+  background-color: rgb(159, 238, 210);
+  padding: 10px 40px 50px 20px;
+}
+
+.footer-btn button {
+  background-color: #fff;
+  border: #fff;
+  padding: 10px 20px;
+}
+
+/* media-query */
+
+@media screen and (max-width: 768px) {
+  /* navbar */
+
+  /* showcase */
+  .showcase {
+    /* visibility: hidden; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .showcase h1 br {
+    display: none;
+  }
+
+  /* popular-courses */
+  .popular-header {
+    text-align: center;
+  }
+
+  .popular .flex {
+    flex-wrap: wrap;
+  }
+
+  /* about */
+  .about-card {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  /* footer */
+  .footer {
+    flex-wrap: nowrap;
+  }
+}
