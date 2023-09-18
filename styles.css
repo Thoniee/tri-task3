@@ -133,6 +133,10 @@ body {
   border: none;
 }
 
+.subscribe input:focus {
+  outline: none;
+}
+
 .subscribe button {
   background-color: rgb(159, 238, 210);
   border: none;
